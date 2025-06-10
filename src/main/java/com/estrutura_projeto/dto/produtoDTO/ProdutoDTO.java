@@ -12,18 +12,17 @@ public class ProdutoDTO {
     private StatusProdutos status;
     private CategoriaDTO categoria;
 
-    public ProdutoDTO(){
-        
+    public ProdutoDTO() {
+
     }
 
-    public ProdutoDTO(Long id, String nome, String decricao, Double preco, StatusProdutos status,
-            CategoriaDTO categoria) {
+    public ProdutoDTO(Long id, String nome, String decricao, Double preco, StatusProdutos status) {
         this.id = id;
         this.nome = nome;
         this.decricao = decricao;
         this.preco = preco;
         this.status = status;
-        this.categoria = categoria;
+        
     }
 
     public Long getId() {
@@ -73,8 +72,5 @@ public class ProdutoDTO {
     public void setCategoria(CategoriaDTO categoria) {
         this.categoria = categoria;
     }
-    
 
-    
-    
 }

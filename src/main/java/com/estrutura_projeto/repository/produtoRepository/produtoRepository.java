@@ -2,8 +2,8 @@ package com.estrutura_projeto.repository.produtoRepository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.estrutura_projeto.entity.categoria.Categoria;
+import com.estrutura_projeto.entity.produto.Produto;
 
-public interface produtoRepository extends JpaRepository <Categoria, Long>{
+public interface produtoRepository extends JpaRepository <Produto, Long>{
     
 }

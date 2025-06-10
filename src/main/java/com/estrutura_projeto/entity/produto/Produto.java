@@ -86,13 +86,13 @@ public class Produto {
         this.categoria = categoria;
     }
 
-    public Produto(Long id, String nome, String descricao, Double preco, StatusProdutos status, Categoria categoria) {
+    public Produto(Long id, String nome, String descricao, Double preco, StatusProdutos status) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
         this.status = status;
-        this.categoria = categoria;
+        
     }
     
     

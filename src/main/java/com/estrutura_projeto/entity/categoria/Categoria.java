@@ -20,7 +20,7 @@ public class Categoria {
     private Long id;
 
     @Column(nullable = false, length = 50 , unique = true)
-    private String name;
+    private String nome;
 
     @OneToMany(mappedBy = "categoria", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private List <Produto> produtos;
@@ -46,17 +46,17 @@ public class Categoria {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public Categoria(Long id, String name, List<Produto> produtos) {
+    public Categoria(Long id, String nome, List<Produto> produtos) {
         this.id = id;
-        this.name = name;
+        this.nome = nome;
         this.produtos = produtos;
     }
     
